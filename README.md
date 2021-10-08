@@ -1,1 +1,1 @@
-# @yarnpkg/fashion
+# fashion
