@@ -1,0 +1,45 @@
+.dashboard_nav {
+  grid-area: navigation;
+  height: 100%;
+  background: #2e3872;
+}
+
+.dashboard_nav__header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+
+  img {
+    height: 100%;
+  }
+}
+
+.dashboard_nav__menu {
+  display: grid;
+  justify-items: end;
+  margin-top: 1rem;
+}
+
+.dashboard_nav__menu-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 90%;
+  color: #aab4e4;
+  text-decoration: none;
+  border-radius: 100px 0 0 100px;
+
+  &.active {
+    background: #18234f;
+  }
+}
+
+.dashboard_nav__menu-link {
+  text-decoration: none;
+  color: #aab4e4;
+  width: 100%;
+  height: 100%;
+}

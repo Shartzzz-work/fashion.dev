@@ -1,0 +1,78 @@
+<main class="dashboard__main">
+  <h1>{{title}}</h1>
+
+  <section class="dashboard__wrapper analytic">
+    <div class="dashboard__container green">
+      <h3>Доход</h3>
+      <strong>235 894.00 ₽</strong>
+    </div>
+    <div class="dashboard__container purple">
+      <h3>Расход</h3>
+      <strong>-235 894.00 ₽</strong>
+    </div>
+    <div class="dashboard__container blue">
+      <h3>Баланс</h3>
+      <strong>0 ₽</strong>
+    </div>
+  </section>
+  <section class="dashboard__wrapper">
+    <div class="dashboard__container">
+      <h2>Заказы</h2>
+      <input type="search" class="dashboard__search order" placeholder="Поиск">
+      <div class="dashboard__order header">
+        <strong>Номер заказа</strong>
+        <strong>Дата</strong>
+        <strong>Статус платежа</strong>
+        <strong>Сумма</strong>
+        <strong>Способ оплаты</strong>
+        <strong>Статус реализации</strong>
+        <strong>Действия</strong>
+      </div>
+      <div class="dashboard__order">
+        <strong>1</strong>
+        <i>05.10.2021</i>
+        <strong class="dashboard__order-status waiting">Ожидает оплату</strong>
+        <strong>235 894.00 ₽</strong>
+        <strong>Карта</strong>
+        <strong class="dashboard__order-status neutral">Распределение</strong>
+        <div class="dashboard__order_actions">
+          <a href="/admin/orders/order"><img src="{{filePass}}img/dashboard/eye.svg" alt="посмотреть заказ"></a>
+          <img src="{{filePass}}img/dashboard/edit.svg" alt="редактировать заказ">
+          <img src="{{filePass}}img/dashboard/trash.svg" alt="удалить заказ">
+        </div>
+      </div>
+      <div class="dashboard__order">
+        <strong>1</strong>
+        <i>05.10.2021</i>
+        <strong class="dashboard__order-status success">Оплачен</strong>
+        <strong>235 894.00 ₽</strong>
+        <strong>Карта</strong>
+        <strong class="dashboard__order-status success">Успешно реализован</strong>
+      </div>
+      <div class="dashboard__order">
+        <strong>1</strong>
+        <i>05.10.2021</i>
+        <strong class="dashboard__order-status reject">Отменен</strong>
+        <strong>235 894.00 ₽</strong>
+        <strong>Карта</strong>
+        <strong class="dashboard__order-status noinfo">Недостаточно информации</strong>
+      </div>
+      <div class="dashboard__order">
+        <strong>1</strong>
+        <i>05.10.2021</i>
+        <strong class="dashboard__order-status waiting">Ожидает оплату</strong>
+        <strong>235 894.00 ₽</strong>
+        <strong>Банковский платеж</strong>
+        <strong class="dashboard__order-status waiting">Ожидает доставку</strong>
+      </div>
+      <div class="dashboard__order">
+        <strong>1</strong>
+        <i>05.10.2021</i>
+        <strong class="dashboard__order-status waiting">Ожидает оплату</strong>
+        <strong>235 894.00 ₽</strong>
+        <strong>Банковский платеж</strong>
+        <strong class="dashboard__order-status info">Любой статус</strong>
+      </div>
+    </div>
+  </section>
+</main>

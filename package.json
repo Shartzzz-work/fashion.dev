@@ -1,0 +1,39 @@
+{
+  "name": "fashion",
+  "version": "0.0.0",
+  "main": "./server/server.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "name": "Shartzzz",
+    "email": "workshartzzz@gmail.com"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "packageManager": "yarn@3.0.2",
+  "scripts": {
+    "sass": "sass --no-source-map --watch ./server/views/scss/style.scss:./public/style.css ./server/views/scss/admin.scss:./public/admin.css",
+    "start": "nodemon ./server/server.js",
+    "dev": "yarn sass & yarn start"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.3",
+    "sass": "^1.42.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1",
+    "@types/express": "^4",
+    "@types/nunjucks": "^3",
+    "@types/sass": "^1",
+    "chokidar": "^3.5.2",
+    "nodemon": "^2.0.13"
+  }
+}

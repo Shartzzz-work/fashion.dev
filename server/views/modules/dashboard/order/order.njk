@@ -1,0 +1,91 @@
+<main class="order__main">
+  <h1>Детали заказа</h1>
+
+  <section class="dashboard__wrapper info">
+    <div class="dashboard__container green">
+      <h3>Информация о клиенте</h3>
+      <div>
+        <strong>Ф.И.О.</strong>
+        <i>Иванов Иван Иванович</i>
+      </br>
+      <strong>Адрес:</strong>
+      <i>ул. Пушкина, д. Колотушкина, кв. 5</i>
+    </div>
+    <div>
+      <div class="order__client_contact">
+        <img src="https://img.icons8.com/ios/50/000000/apple-phone.png"/>
+        <a href="tel:+79991112233">+79991112233</a>
+      </div>
+      <div class="order__client_contact">
+        <img src="https://img.icons8.com/ios/50/000000/email.png"/>
+        <a href="mailto:test@test.ru">test@test.ru</a>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard__container purple">
+    <h3>Информация об оплате</h3>
+    <div>
+      <strong>Метод оплаты:</strong>
+      <i>Карта</i>
+    </div>
+    <div>
+      <strong>Статус оплаты:</strong>
+      <strong class="dashboard__order-status waiting">Ожидает оплату</strong>
+    </div>
+  </div>
+  <div class="dashboard__container blue">
+    <h3>Информация о доставке</h3>
+    <div class="order__delivery">
+      <img src="https://img.icons8.com/ios/50/000000/delivery--v1.png"/>
+      Деловые линии
+    </div>
+    <div class="order__delivery_search">
+      <input type="search" class="dashboard__search delivery" placeholder="Введите трекер">
+      <button type="submit" class="dashboard__button">Отследить</button>
+    </div>
+  </div>
+</section>
+<section class="dashboard__wrapper order">
+  <div class="dashboard__container order__info">
+    <h2>Информация по заказу № <span>1</span></h2>
+    <div class="dashboard__order header">
+      <strong>Позиция</strong>
+      <strong>Количество</strong>
+      <strong>Цена</strong>
+      <strong>Сумма</strong>
+    </div>
+    <div class="dashboard__order">
+      <p>Бюстгальтер полупоролон Бренд</p>
+      <strong>1</strong>
+      <strong>1 500.00 ₽</strong>
+      <strong>1 500.00 ₽</strong>
+    </div>
+    <div class="dashboard__order">
+      <p>Бюстгальтер полупоролон Бренд, имитируем очень длинное название</p>
+      <strong>2</strong>
+      <strong>1 500.00 ₽</strong>
+      <strong>3 000.00 ₽</strong>
+    </div>
+  </div>
+
+  <div class="dashboard__container order__total">
+    <h2>Итого по заказу</h2>
+    <div class="dashboard__order header">
+      <strong></strong>
+      <strong>Цена</strong>
+    </div>
+    <div class="dashboard__order">
+      <strong>Сумма</strong>
+      <strong>5 000.00 ₽</strong>
+    </div>
+    <div class="dashboard__order">
+      <strong>Стоимость доставки</strong>
+      <strong>0 ₽</strong>
+    </div>
+    <div class="dashboard__order">
+      <strong>Итого</strong>
+      <strong>5 000.00 ₽</strong>
+    </div>
+  </div>
+</section>
+</main>

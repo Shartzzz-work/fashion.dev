@@ -1,0 +1,52 @@
+.dashboard__main {
+  height: 100%;
+  .analytic {
+    display: flex;
+    justify-content: space-between;
+    color: #18234f;
+
+    .dashboard__container {
+      display: grid;
+      width: 100%;
+      height: 150px;
+
+      strong {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.dashboard__order-status {
+  padding: 5px;
+  border-radius: 5px;
+  color: #18234f;
+  width: 80%;
+  font-size: 0.9rem;
+
+  &.waiting {
+    background: #6aa6ef;
+  }
+  &.success {
+    background: #6dc8ad;
+  }
+  &.reject {
+    background: #fa8181;
+  }
+  &.noinfo {
+    background: #f1e897;
+  }
+  &.info {
+    background: #c29bfd;
+  }
+  &.neutral {
+    background: #d8e9ff;
+  }
+}
+
+.dashboard__order_actions {
+  display: flex;
+  justify-content: space-evenly;
+  height: 25px;
+  width: 100%;
+}

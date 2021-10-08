@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+  {% block head %}
+    {% include "./head.njk" %}
+  {% endblock %}
+  <body>
+
+    <div id="dashboard">
+      {% block navigation %}{% endblock %}
+      {% block header %}{% endblock %}
+      {% block main %}{% endblock %}
+    </div>
+
+    {# <script type="module" src="dashboard.js"></script> #}
+  </body>
+</html>
